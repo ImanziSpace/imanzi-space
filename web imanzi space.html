@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMANZI Space</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A; /* dark background */
+    color: #E2E2DC; /* light beige text */
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #68624F, #4F4738); /* main color gradient */
+    border-bottom: 2px solid #A89F91; /* accent color */
+    text-align: center;
+    padding: 30px 15px;
+    color: #A89F91; /* accent text */
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* CONTAINER */
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* SECTIONS */
+.section {
+    background-color: #2A2A2A; /* slightly lighter dark for cards */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* IMAGE CARD */
+.image-card {
+    width: 100%;
+    text-align: center;
+}
+
+/* IMAGES */
+.image-card img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.image-card img:hover {
+    transform: scale(1.03);
+}
+
+/* LINKS */
+.image-card a {
+    display: block;
+    margin-top: 8px;
+    color: #A89F91; /* accent color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-card a:hover {
+    color: #E2E2DC;
+}
+
+/* CONTACT BUTTONS */
+.social {
+    text-align: center;
+}
+
+.social a {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    color: #A89F91;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #A89F91;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: #A89F91;
+    color: #1A1A1A;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1A1A1A;
+    text-align: center;
+    padding: 15px;
+    color: #E2E2DC;
+    font-size: 14px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-card {
+        width: 48%;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>IMANZI Space</h1>
+    <p>Welcome to IMANZI Space</p>
+</header>
+
+<div class="container">
+
+    <!-- GALLERY -->
+    <div class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+
+            <div class="image-card">
+                <img src="123.jpeg" alt="Kagugu">
+                <a href="https://www.google.com/maps?q=-1.9073736929583667,30.08507439672958" target="_blank">
+                    Kagugu
+                </a>
+            </div>
+
+            <div class="image-card">
+                <img src="432.jpeg" alt="Kacyiru">
+                <a href="https://www.google.com/maps?q=-1.9325244322582458,30.072690070271353" target="_blank">
+                    Kacyiru
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section">
+        <h2>Contact IMANZI Space</h2>
+
+        <div class="social">
+            <a href="tel:+250788770534/+250786688368">📞 Call Us</a>
+            <a href="https://wa.me/250788770534" target="_blank">💬 WhatsApp</a>
+            <a href="https://instagram.com/yourusername" target="_blank">📸 Instagram</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 IMANZI Space</p>
+</footer>
+
+</body>
+</html>
